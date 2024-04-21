@@ -1,15 +1,17 @@
 // DEVELOP PROJECT STRUCTURE
 // CARDS
 // GRAPHICS
+import "tailwindcss/tailwind.css";
 
 import { Header } from "@/components/header";
-import * as S from "../styles/pages";
+import { Cards } from "../components/cards";
 
 export default function Home() {
   return (
-    <S.Container>
+    <div className="flex w-full flex-col">
       <Header />
+      <Cards />
       <label>Hellow World!</label>
-    </S.Container>
+    </div>
   );
 }
