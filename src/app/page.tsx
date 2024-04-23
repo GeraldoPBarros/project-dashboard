@@ -3,14 +3,17 @@
 // GRAPHICS
 import "tailwindcss/tailwind.css";
 
-import { Header } from "@/components/header";
-import { Cards } from "../components/cards";
+import { Component } from "../components/components";
 
 export default function Home() {
   return (
     <div className="flex w-full flex-col">
-      <Header />
-      <Cards />
+      <Component.Header />
+      <Component.Cards />
+      <div className="flex w-full justify-between px-5">
+        <Component.StatusGraphic />
+        <label>Employees</label>
+      </div>
       <label>Hellow World!</label>
     </div>
   );

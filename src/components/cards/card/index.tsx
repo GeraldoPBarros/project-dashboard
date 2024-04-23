@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Space } from "antd";
-import { AntdIconProps } from "@ant-design/icons/lib/components/AntdIcon";
 
 interface CardProps {
   value: string;
